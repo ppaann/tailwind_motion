@@ -61,7 +61,7 @@ export const ProjectsSection = () => {
         <p className='text-center text-white/50 mt-4 md:text-lg lg:text-xl max-w-md mx-auto'>
           See how I transformed concepts into engaging digital experiences.
         </p>
-        <div className='mt-10 flex flex-col gap-14 md:mt-20 md:gap-20'>
+        <div className='mt-10 flex flex-col gap-20 md:mt-20 md:gap-20'>
           {portfolioProjects.map((project) => (
             <div
               key={project.year + project.title}
@@ -86,7 +86,7 @@ export const ProjectsSection = () => {
                     {project.results.map((result) => (
                       <li
                         key={result.title}
-                        className='flex gap-2 md:text-base text-white/50'
+                        className='flex gap-2 text-sm md:text-base text-white/50'
                       >
                         <CheckCircleIcon className='size-5 md:size-6' />
                         {result.title}
