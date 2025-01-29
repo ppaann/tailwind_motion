@@ -42,7 +42,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className='pt-16 lg:py-24'>
+    <div className='pt-16 lg:py-24 pb-16'>
       <div className='container'>
         <SectionHead
           title='Happy Clientes'
