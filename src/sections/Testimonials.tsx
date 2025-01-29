@@ -5,7 +5,8 @@ import memojiAvatar3 from '@/assets/images/memoji-avatar-3.png';
 import memojiAvatar4 from '@/assets/images/memoji-avatar-4.png';
 import memojiAvatar5 from '@/assets/images/memoji-avatar-5.png';
 import { SectionHead } from '@/components/SectionHead';
-
+import grainImage from '@/assets/images/grain.jpg';
+import { Card } from '@/components/Card';
 const testimonials = [
   {
     name: 'Alex Turner',
@@ -41,7 +42,7 @@ const testimonials = [
 
 export const TestimonialsSection = () => {
   return (
-    <div className='pt-16'>
+    <div className='pt-16 lg:py-24'>
       <div className='container'>
         <SectionHead
           title='Happy Clientes'
@@ -49,14 +50,34 @@ export const TestimonialsSection = () => {
           description="Don't just take my word for it. See what my clients have to say about my work."
         />
 
-        {testimonials.map((testimonial, index) => (
-          <div key={index}>
-            <Image src={testimonial.avatar} alt={testimonial.name} />
-            <p>{testimonial.text}</p>
-            <h3>{testimonial.name}</h3>
-            <h4>{testimonial.position}</h4>
+        <div
+          className='mt-16 lg:mt-24 flex overflow-x-clip'
+          style={{
+            maskImage:
+              'linear-gradient(to right, transparent, black 10%, black 90%, transparent) ',
+          }}
+        >
+          <div className='flex-none flex gap-8'>
+            {testimonials.map((testimonial, index) => (
+              <Card key={index} className='max-w-xs md:max-w-md md:p-8'>
+                <div className='flex gap-4 items-center '>
+                  <div className='flex rounded-full bg-gray-700 size-14 flex-shrink-0'>
+                    <Image src={testimonial.avatar} alt={testimonial.name} />
+                  </div>
+                  <div className='flex flex-col'>
+                    <h3 className='font-semibold'>{testimonial.name}</h3>
+                    <h4 className='text-white/50 text-sm'>
+                      {testimonial.position}
+                    </h4>
+                  </div>
+                </div>
+                <p className='mt-4 md:mt-6 text-sm md:text-base'>
+                  {testimonial.text}
+                </p>
+              </Card>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
     </div>
   );
