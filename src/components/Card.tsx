@@ -17,7 +17,7 @@ export const Card = ({
         className='inset-0 absolute -z-10 opacity-5'
         style={{ backgroundImage: `url(${grainImage.src})` }}
       ></div>
-      <div>{children}</div>
+      {children}
     </div>
   );
 };
