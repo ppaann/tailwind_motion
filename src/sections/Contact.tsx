@@ -5,7 +5,7 @@ export const ContactSection = () => {
   return (
     <div className='pt-8'>
       <div className='container'>
-        <div className='px-8 py-8 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl flex flex-col md:flex-row text-center items-center relative z-0 overflow-hidden md: gap-16'>
+        <div className='px-8 py-8 bg-gradient-to-r from-emerald-300 to-sky-400 rounded-3xl flex flex-col md:flex-row text-center items-center relative z-0 overflow-hidden md:gap-16'>
           <div
             className='absolute inset-0 opacity-5 -z-10'
             style={{ backgroundImage: `url(${grainImage.src})` }}
