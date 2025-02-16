@@ -64,7 +64,9 @@ export const HeroSection = () => {
             alt='Man looking from behind the laptop'
           />
           <div className='flex gap-4 justify-center items-center bg-gray-950 border border-white/20 rounded px-4 py-1.5'>
-            <div className='bg-green-500 h-2.5 w-2.5 border border-green-500 rounded-full'></div>
+            <div className='bg-green-500 h-2.5 w-2.5 border border-green-500 rounded-full relative'>
+              <div className='absolute bg-green-500 rounded-full inset-0 animate-ping-large'></div>
+            </div>
             <div className='text-sm text-white/90'>
               Available for new projects
             </div>
