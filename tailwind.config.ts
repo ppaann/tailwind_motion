@@ -1,3 +1,4 @@
+import { transform } from 'next/dist/build/swc';
 import type { Config } from 'tailwindcss';
 
 const config: Config = {
@@ -33,9 +34,18 @@ const config: Config = {
             opacity: '0',
           },
         },
+        'move-left': {
+          '0%': {
+            transform: 'translateX(0%)',
+          },
+          '100%': {
+            transform: 'translateX(-50%)',
+          },
+        },
       },
       animation: {
         'ping-large': 'ping-large 1s cubic-bezier(0, 0, 0.2, 1) infinite',
+        'move-left': 'move-left 1s linear infinite',
       },
     },
   },
