@@ -21,7 +21,7 @@ export const TapeSection = () => {
           className='flex'
           style={{
             maskImage:
-              'linear-gradient(to right, transparent, black 10%, black 70%, transparent)',
+              'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
           }}
         >
           <div className='flex flex-none gap-4 py-3 pr-4 animate-move-left [animation-duration:30s]'>
