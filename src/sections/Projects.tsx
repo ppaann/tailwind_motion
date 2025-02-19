@@ -3,7 +3,6 @@ import lightSaasLandingPage from '@/assets/images/light-saas-landing-page.png';
 import aiStartupLandingPage from '@/assets/images/ai-startup-landing-page.png';
 import Image from 'next/image';
 import RightUpArrowIcon from '@/assets/icons/arrow-up-right.svg';
-import grainImage from '@/assets/images/grain.jpg';
 import CheckCircleIcon from '@/assets/icons/check-circle.svg';
 import { SectionHead } from '@/components/SectionHead';
 import { Card } from '@/components/Card';
