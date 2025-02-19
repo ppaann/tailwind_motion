@@ -60,10 +60,14 @@ export const AboutSection = () => {
               description='Explore the technologies and tolls I use to craft exceptional digital experiences.'
               className='px-6 pt-6'
             />
-            <ToolboxItems className='mt-6' toolboxItems={toolboxItems} />
             <ToolboxItems
               className='mt-6'
-              wrapperClassName='-translate-x-1/2'
+              toolboxItems={toolboxItems}
+              wrapperClassName='animate-move-left [animation-duration:30s]'
+            />
+            <ToolboxItems
+              className='mt-6'
+              wrapperClassName='animate-move-right [animation-duration:15s]'
               toolboxItems={toolboxItems}
             />
           </Card>
